@@ -22,4 +22,9 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have an anchor tag with routerLink pointing to "profile"', () => {
+    const anchorElement = fixture.debugElement.nativeElement.querySelector('a[routerLink="profile"]');
+    expect(anchorElement).toBeTruthy();
+  });
 });
