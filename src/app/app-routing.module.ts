@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./components/home/home.component";
 import {FeedComponent} from "./components/feed/feed.component";
 import {SearchComponent} from "./components/search/search.component";
+import { ProfileComponent } from './components/profile/profile.component';
 
 /**
  * This array contains all of the routes. Every route constitutes of a 'path' and a component which is used as a
@@ -19,7 +20,7 @@ import {SearchComponent} from "./components/search/search.component";
  * TODO: add a route to 'profile', where the ProfileComponent is displayed. Be sure that the component is properly
  * imported, and that you link to the 'profile' route within the navbar component.
  */
-const routes: Routes = [
+export const routes: Routes = [
   {path: 'feed', component: FeedComponent},
   {path: 'search', component: SearchComponent},
   //add the 'profile' route
