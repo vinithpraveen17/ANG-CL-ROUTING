@@ -23,8 +23,9 @@ import { ProfileComponent } from './components/profile/profile.component';
 export const routes: Routes = [
   {path: 'feed', component: FeedComponent},
   {path: 'search', component: SearchComponent},
+  {path: 'profile', component: ProfileComponent},
   //add the 'profile' route
-  {path: '**', component: HomeComponent}
+  {path: '**', component: HomeComponent},
 ];
 
 @NgModule({
